@@ -1,6 +1,6 @@
 float r;
 
-String mode = "earthMode";
+String mode = "randomMode";
 
 
 void setup() {
@@ -17,7 +17,7 @@ void setup() {
   }
   frameRate(120);
   textAlign(RIGHT);
-  text("Made by Sharad Ghimire", 220, 220);
+  text("Made by Sharad Ghimire", 220, 700);
 }
 
 void draw() {
@@ -38,7 +38,7 @@ void draw() {
     translate(140, 0);
     rotate(radians(-r*3));
     fill(#1E468B);
-    ellipse(25, 0, 5, 5);
+    ellipse(25, 0, 15, 15);
     popMatrix();
     popMatrix(); 
     r += 1;
@@ -115,9 +115,10 @@ void draw() {
 
     //Middle One is Star
     fill(InterpColor1);
-    //ellipse(0, 0, 100, 100);
-    Cat cat - new Cat();
-    cat.draw()
+    ellipse(0, 0, 150,150);
+    //ellipse(10,10 , 50, 50);
+    //ellipse(-20, -20, 50, 50);
+    
     //Second One is ellipse
     fill(InterpColor2);
     ellipse(140, 0, 20, 20);
