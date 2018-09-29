@@ -18,12 +18,8 @@ void setup() {
 void draw() {}
 
 void mousePressed() {   
-  float x = height/10;
-  
-  if(mouseX<height/3.1 && mouseY<height-9*x) {
-    white1.trigger();
-  }
-  
+  playLeft();
+  playRight();
 }
 
 void initSoundFiles(){
@@ -99,4 +95,98 @@ void initDraw() {
   rect(width -(height/3.1)/2 , height - 2*x - height/25, width, height -2*x + height/25);
   rect(width -(height/3.1)/2 , height - x - height/25, width, height - x + height/25);
   fill(255);
+}
+
+void playLeft(){
+  float x = height/10;
+  
+  if(mouseX<height/3.1 && mouseY<height-9*x) {
+    white1.trigger();
+  }
+  
+  if(mouseX<height/3.1 && mouseY<height-8*x){
+    white2.trigger();
+  }
+  if(mouseX<height/3.1 && mouseY<height-6*x){
+    white3.trigger();
+  }
+  
+  
+  if(mouseX<height/3.1 && mouseY<height-7*x){
+    white4.trigger();
+  }
+    
+  if(mouseX<height/3.1 && mouseY<height-6*x){
+    white5.trigger();
+  }
+    
+  if(mouseX<height/3.1 && mouseY<height-5*x){
+    white6.trigger();
+  }
+
+  if(mouseX<height/3.1 && mouseY<height-4*x){
+    white7.trigger();
+  }
+    
+  if(mouseX<height/3.1 && mouseY<height-3*x){
+    white8.trigger();
+  }
+    
+  if(mouseX<height/3.1 && mouseY<height-2*x){
+    white9.trigger();
+  }
+    
+  if(mouseX<height/3.1 && mouseY<height-x){
+    white10.trigger();
+  }
+  if(mouseX<height/3.1 && mouseY>height-x){
+    white10.trigger();
+  }
+}
+
+void playRight(){
+  float x = height/10;
+  
+  if(mouseX>width-(width/3.1)  && mouseY<height-9*x) {
+    white10.trigger();
+  }
+  
+  if(mouseX>width-(width/3.1) && mouseY<height-8*x){
+    white2.trigger();
+  }
+  if(mouseX>width-(width/3.1) && mouseY<height-6*x){
+    white3.trigger();
+  }
+
+  if(mouseX>width-(width/3.1) && mouseY<height-7*x){
+    white4.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-6*x){
+    white5.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-5*x){
+    white6.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-4*x){
+    white7.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-3*x){
+    white8.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-2*x){
+    white9.trigger();
+  }
+    
+  if(mouseX>width-(width/3.1) && mouseY<height-x){
+    white10.trigger();
+  }
+  if(mouseX>width-(width/3.1) && mouseY>height-x){
+    white10.trigger();
+  }
+  
 }
